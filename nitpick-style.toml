@@ -1,0 +1,23 @@
+# Default nitpick style file for EatFirst
+# See https://github.com/andreoliwa/flake8-nitpick
+
+[nitpick]
+minimum_version = "0.10.0"
+
+[nitpick.styles]
+include = [
+    "styles/python36.toml",
+    "styles/poetry.toml",
+    "styles/absent-files.toml",
+    "styles/black.toml",
+    "styles/flake8.toml",
+    "styles/pylint.toml",
+    "styles/isort.toml",
+    "styles/mypy.toml",
+    "styles/pre-commit.toml",
+    "styles/pytest.toml",
+    "styles/ipython.toml",
+]
+
+[nitpick.files."setup.cfg"]
+comma_separated_values = ["flake8.ignore", "flake8.exclude", "isort.skip", "isort.known_first_party"]
