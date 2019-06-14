@@ -1,5 +1,5 @@
 # Default nitpick style file for EatFirst
-# See https://github.com/andreoliwa/flake8-nitpick
+# See https://github.com/andreoliwa/nitpick
 
 [nitpick]
 minimum_version = "0.10.0"
