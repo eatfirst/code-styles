@@ -5,3 +5,11 @@ missing_message = "Create the file with the contents below, then run 'pre-commit
 # See https://pre-commit.com/hooks.html for more hooks
 ["pre-commit-config.yaml"]
 fail_fast = true
+
+[["pre-commit-config.yaml".repos]]
+yaml = """
+  - repo: https://github.com/andreoliwa/nitpick
+    rev: v0.16.1
+    hooks:
+      - id: nitpick
+"""
