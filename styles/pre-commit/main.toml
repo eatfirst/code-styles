@@ -1,15 +1,13 @@
-[nitpick.files."pre-commit-config.yaml"]
-missing_message = "Create the file with the contents below, then run 'pre-commit install'"
-
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
-["pre-commit-config.yaml"]
-fail_fast = true
+
+[nitpick.files.present]
+".pre-commit-config.yaml" = "Create the file with the contents below, then run 'pre-commit install'"
 
 [["pre-commit-config.yaml".repos]]
 yaml = """
   - repo: https://github.com/andreoliwa/nitpick
-    rev: v0.16.1
+    rev: v0.21.0
     hooks:
       - id: nitpick
 """
