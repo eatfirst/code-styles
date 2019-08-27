@@ -14,3 +14,12 @@ warn_no_return = true
 # Lint-style cleanliness for typing
 warn_redundant_casts = true
 warn_unused_ignores = true
+
+# TODO the cave still cannot use this, and nitpick still doesn't have an "exclude style" feature
+# [["pre-commit-config.yaml".repos]]
+# yaml = """
+#   - repo: https://github.com/pre-commit/mirrors-mypy
+#     rev: v0.720
+#     hooks:
+#       - id: mypy
+# """

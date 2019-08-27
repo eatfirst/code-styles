@@ -1,2 +1,13 @@
 ["pyproject.toml".tool.poetry.dev-dependencies]
 pylint = "*"
+
+[["pre-commit-config.yaml".repos]]
+yaml = """
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: python
+        types: [python]
+"""
