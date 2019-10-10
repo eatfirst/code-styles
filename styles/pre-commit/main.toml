@@ -7,7 +7,7 @@
 [["pre-commit-config.yaml".repos]]
 yaml = """
   - repo: https://github.com/andreoliwa/nitpick
-    rev: v0.21.0
+    rev: v0.21.1
     hooks:
       - id: nitpick
 """
